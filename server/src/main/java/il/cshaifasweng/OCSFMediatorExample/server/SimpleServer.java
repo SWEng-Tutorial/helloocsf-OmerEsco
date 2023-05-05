@@ -56,7 +56,7 @@ public class SimpleServer extends AbstractServer {
                 //add code here to send submitters names to client
                 message.setMessage("Omer, Ido");
                 client.sendToClient(message);
-            } else if (request.equals("what’s the time?")) {
+            } else if (request.equals("what's the time?")) {
                 //add code here to send the time to client
                 DateTimeFormatter dtf = DateTimeFormatter.ofPattern("HH:mm:ss");
                 message.setMessage(LocalTime.now().format(dtf));
